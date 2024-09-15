@@ -36,6 +36,7 @@ fn main() {
                     }
                     _ if key_str.eq_ignore_ascii_case("Space") => key_str = " ".to_string(),
                     _ if key_str.starts_with("Num") => key_str = key_str.replace("Num", ""),
+                    _ if key_str.starts_with("Dot") => key_str = ".".to_string(),
                     _ => key_str = format!("[{}] ", key_str),
                 }
 
